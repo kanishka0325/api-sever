@@ -5,7 +5,7 @@ files:
     destination: /home/ec2-user/api-sever
 hooks:
   AfterInstall:
-    - location: scripts/after_install.sh
+    - location: scripts/aplication_after.sh
       timeout: 300
       runas: root
   ApplicationStart:
