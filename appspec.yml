@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/buyasia/test-api
+    destination: /home/ec2-user/api-sever
 hooks:
   AfterInstall:
     - location: scripts/after_install.sh
