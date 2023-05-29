@@ -4,7 +4,7 @@
   "description": "ci-cd pipeline config",
   "main": "app.js",
   "scripts": {
-    "start": "node index",
+    "start": "node app.js > app.log 2> error.log &",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
