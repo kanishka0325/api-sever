@@ -1,0 +1,23 @@
+{
+  "name": "api-sever",
+  "version": "0.0.1",
+  "description": "ci-cd pipeline config",
+  "main": "app.js",
+  "scripts": {
+    "start": "node index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kanishka0325/api-sever.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kanishka0325/api-sever/issues"
+  },
+  "homepage": "https://github.com/kanishka0325/api-sever#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
