@@ -1,18 +1,15 @@
 version: 0.0
 os: linux
-files: 
+files:
   - source: /
-    destination: /home/ec2-user/my-project
-hooks: 
-  ApplicationStop:
-    - location: scripts/application_stop.sh
+    destination: /home/ec2-user/buyasia/test-api
+hooks:
+  AfterInstall:
+    - location: scripts/after_install.sh
       timeout: 300
-      runas: ec2-user
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: ec2-user
-  ApplicationStart: 
+      runas: root
+  ApplicationStart:
     - location: scripts/application_start.sh
       timeout: 300
-      runas: ec2-user
+      runas: root
+#  ValidateService:
