@@ -4,6 +4,10 @@ files:
   - source: /
     destination: /home/ec2-user/api-sever
 hooks:
+#  ApplicationStop:
+#  DownloadBundle:
+#  BeforeInstall:
+#  Install:
   AfterInstall:
     - location: scripts/after_install.sh
       timeout: 300
